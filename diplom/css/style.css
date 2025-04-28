@@ -1,0 +1,603 @@
+@import './fonts.css';
+@import './reset.css';
+@import './global.css';
+@import './header.css';
+@import './footer.css';
+@import './media.css';
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 212px;
+  padding: 10px;
+}
+
+.block-1 {
+  max-width: 1064px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.info-title h2 {
+  font-family: 'Futura Md BT';
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.info-title h2:nth-child(1)::after {
+  content: url(../img/other/essence-1.png);
+  position: absolute;
+  padding-left: 10px;
+  top: 24px;
+}
+
+.info-title h2:nth-child(2) {
+  background: linear-gradient(10deg,
+      rgb(255, 255, 255) 60%,
+      rgb(255, 0, 0) 62%,
+      rgb(255, 0, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.info-title h2:nth-child(3)::before {
+  content: url(../img/other/essence-2.png);
+  padding-right: 25px;
+}
+
+.info-text {
+  font-family: 'Futura Bk BT';
+  line-height: 48px;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 50px;
+}
+
+.info-button {
+  padding: 16px 25px;
+}
+
+/* =======================bestsellers========================== */
+
+.bestsellers {
+  padding: 10px;
+  margin-bottom: 160px;
+}
+
+.best__sellers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.best__sellers-title {
+  padding: 10px 10px;
+  font-family: 'Futura Md BT';
+  font-size: 6vw;
+  line-height: 6vw;
+  text-align: center;
+  background: linear-gradient(10deg,
+      rgb(255, 255, 255) 65%,
+      rgb(255, 0, 0) 67%,
+      rgb(255, 0, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.best__sellers-images {
+  display: flex;
+  gap: 16px;
+}
+
+.best__sellers_women,
+.best__sellers_kids,
+.best__sellers_men {
+  position: relative;
+}
+
+.best__sellers_women img,
+.best__sellers_kids img,
+.best__sellers_men img {
+  width: 100%;
+}
+
+.best__sellers-images span {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  right: 20px;
+  color: rgb(0, 0, 0);
+  font-family: 'Futura Md BT';
+  font-size: 5vw;
+  line-height: 5vw;
+  font-style: italic;
+  text-align: center;
+  text-shadow:
+    -0 -1px 0 #FFFFFF,
+    0 -1px 0 #FFFFFF,
+    -0 1px 0 #FFFFFF,
+    0 1px 0 #FFFFFF,
+    -1px -0 0 #FFFFFF,
+    1px -0 0 #FFFFFF,
+    -1px 0 0 #FFFFFF,
+    1px 0 0 #FFFFFF,
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF,
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+}
+
+/* ======================sport====================== */
+
+.sport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+.sport__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.sport__title img {
+  width: 50vw;
+}
+
+.sport__products {
+  display: grid;
+  align-items: end;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+.sport__products-3 {
+  grid-column: 2/3;
+}
+
+.sport__products-1,
+.sport__products-2,
+.sport__products-3,
+.sport__products-4,
+.sport__products-5,
+.sport__products-6 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sport__products-1 h3,
+.sport__products-2 h3,
+.sport__products-3 h3,
+.sport__products-4 h3,
+.sport__products-5 h3,
+.sport__products-6 h3 {
+  font-family: 'Futura LtCn BT';
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+}
+
+.sport__content {
+  display: flex;
+  margin-bottom: 16px;
+  z-index: 3;
+  width: 100%;
+}
+
+.sport__content img {
+  width: 100%;
+}
+
+.sport a {
+  padding: 18px 24px;
+}
+
+/* ======================modern====================== */
+.modern {
+  height: 480px;
+  padding: 0 20px;
+  margin-bottom: 160px;
+}
+
+.modern-block {
+  height: 100%;
+  display: grid;
+  padding: 78px 0;
+  grid-template-columns: 0.3fr 0.7fr;
+  align-items: center;
+}
+
+.modern-img {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  background: rgba(158, 0, 0, 0.2);
+}
+
+.modern-blur {
+  width: 300px;
+  height: 300px;
+  border-radius: 111px;
+  filter: blur(250px);
+  background: conic-gradient(from 180deg at 50% 50%, rgb(255, 0, 0), rgb(255, 0, 0));
+}
+
+.modern-img img {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  transform: rotate(15.56deg);
+}
+
+.modern-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern-content {
+  width: 676px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modern-title {
+  font-family: 'Futura Md BT';
+  font-size: 59px;
+  line-height: 77px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.modern-text {
+  font-family: 'Futura Bk BT';
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.modern-button {
+  width: 157px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+/* ======================favorite====================== */
+
+.favorite__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 240px;
+}
+
+.favorite-title {
+  font-family: 'Futura Md BT';
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.favorite-title span {
+  color: #ff0000;
+}
+
+.favorite-nike {
+  font-family: 'Futura LtCn BT';
+  position: relative;
+  letter-spacing: 5px;
+}
+
+.favorite-nike::after {
+  width: 134.08px;
+  height: 32px;
+  content: '';
+  position: absolute;
+  background: radial-gradient(50.00% 50.00% at 50% 50%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 100%);
+  bottom: -10px;
+  left: -20px;
+}
+
+.favorite__product {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 292px;
+  gap: 80px;
+
+}
+
+.product__1 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.product__2 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.product__3 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.product-title {
+  font-family: 'Futura XBlkCnIt BT';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: right;
+  margin-bottom: 14px;
+}
+
+.product-price {
+  color: #ba0000;
+  font-family: 'Futura XBlkCnIt BT';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.product__1-img {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+}
+
+.product__1-img img {
+  width: 100%;
+}
+
+.product__2-img,
+.product__3-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product__2-img img,
+.product__3-img img {
+  width: 100%;
+}
+
+.product__1::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 279.65px;
+  height: 292px;
+  border-radius: 50%;
+  filter: blur(130px);
+  background: conic-gradient(from 180deg, rgb(255, 0, 0), rgba(255, 0, 0, 0.7));
+  z-index: -1;
+}
+
+.product__2::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 279.65px;
+  height: 292px;
+  border-radius: 50%;
+  filter: blur(130px);
+  background: conic-gradient(from 180deg, rgb(255, 0, 0), rgba(255, 0, 0, 0.7));
+  z-index: -1;
+}
+
+.product__3::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 279.65px;
+  height: 292px;
+  border-radius: 50%;
+  filter: blur(130px);
+  background: conic-gradient(from 180deg, rgb(255, 0, 0), rgba(255, 0, 0, 0.7));
+  z-index: -1;
+}
+
+/* ======================brand====================== */
+
+.brand {
+  width: auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  margin-bottom: 250px;
+}
+
+.brand-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-img img {
+  height: 3vw;
+}
+
+
+
+/* ======================bestShoes====================== */
+/* ======================visionary====================== */
+/* ======================discount====================== */
+
+/* ======================media__main====================== */
+
+@media (width < 1200px) {}
+
+@media (width < 900px) {
+
+  .info-title h2:nth-child(1)::after,
+  .info-title h2:nth-child(3)::before {
+    display: none;
+  }
+
+}
+
+@media (width < 800px) {
+  .info-title {
+    align-items: center;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+
+  /* =================================== */
+
+  .sport__title {
+    margin-bottom: 50px;
+  }
+
+  .sport__products {
+    grid-template-columns: repeat(2, 25vw);
+  }
+
+  .sport__products-3 {
+    grid-column: 1;
+  }
+
+  /* ============================================== */
+
+  .modern-block {
+    padding: 0;
+  }
+
+  .modern-content {
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .modern-title {
+    text-align: center;
+    font-size: 7vw;
+    line-height: 9vw;
+  }
+
+  .modern-text {
+    text-align: center;
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+
+  .modern-block {
+    grid-template-columns: auto;
+  }
+
+  .modern-img {
+    display: none;
+  }
+
+}
+
+@media (width < 650px) {
+
+  .info-title h2 {
+    font-size: 7vw;
+  }
+
+  .info-title {
+    padding: 0 40px;
+    margin-bottom: 0;
+  }
+
+  .info-title {
+    align-items: start;
+
+    font-size: 4vh;
+  }
+
+  .info-text {
+    text-align: left;
+    font-size: 2vw;
+    margin: 0px;
+  }
+
+}
+
+@media (width < 500px) {
+
+  .info {
+    margin-bottom: 60px;
+  }
+
+  .info-text {
+    font-size: 10px;
+  }
+
+  .info-button {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .best__sellers-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (width < 350px) {}
