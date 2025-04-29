@@ -1,0 +1,187 @@
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__top {
+  width: 100%;
+  padding: 0 20px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__shipping,
+.footer__stopwatch,
+.footer__shield,
+.footer__cube {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__shipping-img,
+.footer__stopwatch-img,
+.footer__shield-img,
+.footer__cube-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__shipping-title,
+.footer__stopwatch-title,
+.footer__shield-title,
+.footer__cube-title {
+  font-family: 'Futura Hv BT';
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.footer__shipping-subtext,
+.footer__stopwatch-subtext,
+.footer__shield-subtext,
+.footer__cube-subtext {
+  font-family: 'Futura Bk BT';
+  line-height: 19px;
+  text-transform: capitalize;
+}
+
+/* ======================================================= */
+
+.footer__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 72px 20px;
+}
+
+.footer__connection {
+  display: grid;
+  margin-right: 40px;
+}
+
+.footer__connection-email {
+  width: 457px;
+  margin-bottom: 88px;
+}
+
+.footer__connection-title {
+  font-family: 'Futura LT';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.footer__connection-field {
+  max-width: 399px;
+  height: 56px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__connection-input {
+  width: 253px;
+  height: 56px;
+  background: none;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__connection-button {
+  width: 146px;
+  height: 56px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.footer__connection-logo {
+  width: 240px;
+  height: 125.22px;
+}
+
+.footer__connection-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0 70px;
+}
+
+.footer__help {
+  grid-column: 3;
+  grid-row: -1/1;
+}
+
+.footer__shop-title,
+.footer__services-title,
+.footer__help-title,
+.footer__contact-title,
+.footer__enterprise-title {
+  font-family: 'Futura XBlkCnIt BT';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.footer__shop-item,
+.footer__services-item,
+.footer__help-item,
+.footer__contact-item,
+.footer__enterprise-item {
+  font-family: 'Futura LtCn BT';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+
+.footer__bottom {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer__bottom-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__bottom-title span {
+  font-family: 'Futura Bk BT';
+  margin-right: 8px;
+}
+
+.footer__bottom-img {
+  width: 13px;
+  height: 13px;
+}
+
+.footer__bottom-img img {
+  width: 100%;
+}
+
+.bottom__list {
+  display: flex;
+  gap: 42px;
+}
