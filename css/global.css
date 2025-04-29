@@ -1,0 +1,43 @@
+:root {}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5vw;
+}
+
+.body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  line-height: 1.5;
+  background: #000;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Futura Hv BT';
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.button {
+  font-family: 'Futura Bk BT';
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 36px;
+  padding: 6px 16px;
+  cursor: pointer !important;
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: 0px auto;
+  height: 100%;
+}
