@@ -900,6 +900,15 @@
   .favorite-dot {
     display: none;
   }
-}
+  /* ============================================ */
 
-@media (width < 350px) {}
+  .discount__text-title {
+    font-size: 8vw;
+    line-height: 9vw;
+  }
+
+  .discount__text-p {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+}
